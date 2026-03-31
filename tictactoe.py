@@ -4,21 +4,17 @@ import os
 import random
 import datetime
 
-TARGET_URL = "https://github.com/zhanghaichao520"
-LINKS = {f"Tile {i}": TARGET_URL for i in range(9)}
-
-GITHUB_USERNAME = os.getenv("GITHUB_USERNAME", "zhanghaichao520")
-PROFILE_REPO = os.getenv("PROFILE_REPO", GITHUB_USERNAME)
-PROFILE_NAME = os.getenv("PROFILE_NAME", "张海超")
-PROFILE_EMAIL = os.getenv("PROFILE_EMAIL", "zhang_haichao@163.com")
-PROFILE_LINKEDIN = os.getenv(
-    "PROFILE_LINKEDIN",
-    "https://www.linkedin.com/in/%E6%B5%B7%E8%B6%85-%E5%BC%A0-8236312a5/",
-)
-PROFILE_TWITTER = os.getenv("PROFILE_TWITTER", "https://x.com/zhanghaichao961")
-PROFILE_URL = f"https://github.com/{GITHUB_USERNAME}"
-REPO_URL = f"https://github.com/{GITHUB_USERNAME}/{PROFILE_REPO}"
-ASSET_BASE_URL = f"{REPO_URL}/blob/master/assets"
+LINKS = {
+    "Tile 0": "https://linkly.link/2etNk",
+    "Tile 1": "https://linkly.link/2etNS",
+    "Tile 2": "https://linkly.link/2etOG",
+    "Tile 3": "https://linkly.link/2etOj",
+    "Tile 4": "https://linkly.link/2etP8",
+    "Tile 5": "https://linkly.link/2etPZ",
+    "Tile 6": "https://linkly.link/2etPr",
+    "Tile 7": "https://linkly.link/2etQB",
+    "Tile 8": "https://linkly.link/2etQZ",
+}
 
 
 def get_tile_count():
@@ -140,35 +136,37 @@ def tictactoe(tile_click_count):
 
 
 def update_readme(game_state, winner):
+    profile_url = "https://github.com/zhanghaichao520"
+    asset_base_url = "https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets"
+
     tile_content = {}
     for tile in range(9):
         if game_state["tiles"][f"Tile {tile}"] is None:
             tile_content[f"Tile {tile}"] = (
-                f"[![Tile {tile}]({ASSET_BASE_URL}/{game_state['tiles'][f'Tile {tile}']}.png)]({LINKS[f'Tile {tile}']})"
+                f"[![Tile {tile}]({asset_base_url}/{game_state['tiles'][f'Tile {tile}']}.png)]({LINKS[f'Tile {tile}']})"
             )
         else:
             tile_content[f"Tile {tile}"] = (
-                f"[![Tile {tile}]({ASSET_BASE_URL}/{game_state['tiles'][f'Tile {tile}']}.png)]({PROFILE_URL})"
+                f"[![Tile {tile}]({asset_base_url}/{game_state['tiles'][f'Tile {tile}']}.png)]({profile_url})"
             )
 
     status_line = (
-        f'当前轮到: <img src="{ASSET_BASE_URL}/{not game_state["last_played"]}.png" alt="当前回合" width="32"/>'
+        f'当前轮到: <img src="{asset_base_url}/{not game_state["last_played"]}.png" alt="当前回合" width="32"/>'
         if winner is None
-        else f'获胜方: <img src="{ASSET_BASE_URL}/{winner}.png" alt="获胜方" width="32"/>'
+        else f'获胜方: <img src="{asset_base_url}/{winner}.png" alt="获胜方" width="32"/>'
     )
 
-    README = f"""# 你好，我是 {PROFILE_NAME}！
+    README = f"""# 你好，我是 张海超！
 ### 欢迎来到我的 <img src="https://img.icons8.com/color/96/000000/github--v1.png" height="24"/>GitHub 主页
 
 <p align="center">
-  <a href="{PROFILE_URL}"><img src="https://img.icons8.com/color/96/000000/github--v1.png" height="16"/>GitHub 主页</a> ·
-  <a href="{PROFILE_LINKEDIN}"><img src="https://img.icons8.com/color/96/000000/linkedin-circled.png" height="16"/>LinkedIn</a> ·
-  <a href="{PROFILE_TWITTER}"><img src="https://img.icons8.com/color/96/000000/twitter-circled.png" height="16"/>Twitter</a> ·
-  <a href="mailto:{PROFILE_EMAIL}"><img src="https://img.icons8.com/color/96/000000/email.png" height="16"/>邮箱</a> ·
-  <a href="{REPO_URL}"><img src="https://img.icons8.com/color/96/000000/code.png" height="16"/>Profile 仓库</a>
+  <a href="https://zhanghaichao520.github.io/"><img src="https://img.icons8.com/color/96/000000/github--v1.png" height="16"/>个人主页</a> ·
+  <a href="https://www.linkedin.com/in/%E6%B5%B7%E8%B6%85-%E5%BC%A0-8236312a5/"><img src="https://img.icons8.com/color/96/000000/linkedin-circled.png" height="16"/>LinkedIn</a> ·
+  <a href="https://x.com/zhanghaichao961"><img src="https://img.icons8.com/color/96/000000/twitter-circled.png" height="16"/>Twitter</a> ·
+  <a href="mailto:zhang_haichao@163.com"><img src="https://img.icons8.com/color/96/000000/email.png" height="16"/>邮箱</a>
 </p>
 
-#### 来玩一局井字棋（Tic-Tac-Toe）吧
+#### 来玩一局井字棋吧
 点击一个格子即可参与落子投票  
 每小时会自动选择点击次数最多的一步
 
@@ -189,11 +187,7 @@ GitHub Actions 通过定时任务每小时运行一次脚本。
 
 ## 关于我
 
-你好，我是 {PROFILE_NAME}（GitHub: [{GITHUB_USERNAME}]({PROFILE_URL})）。  
-我的邮箱是 [{PROFILE_EMAIL}](mailto:{PROFILE_EMAIL})。  
-LinkedIn: [{PROFILE_LINKEDIN}]({PROFILE_LINKEDIN})。  
-Twitter: [{PROFILE_TWITTER}]({PROFILE_TWITTER})。  
-这里是我的 GitHub Profile 仓库，主要用于展示和维护这个互动井字棋小游戏。  
+你好，我是张海超，目前在西交利物浦大学攻读PhD (Recommendation system & LLM)。我曾在阿里巴巴从事广告推荐与数据平台研发，具备大规模系统和高并发场景下的工程实践经验。我的研究主要聚焦 LLM、RAG、推荐去偏与遗忘、可控生成和参数高效适配，相关成果已发表于或投稿于 ICDM、APWEB、SIGIR、IJCAI 等会议。熟悉 Python、Java 与 PyTorch，长期关注“科研创新 + 工业落地”的结合。
 """
 
     with open("README.md", "w", encoding="utf-8") as f:
