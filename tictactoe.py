@@ -3,6 +3,7 @@ import json
 import os
 import random
 import datetime
+import re
 
 LINKS = {
     "Tile 0": "https://linkly.link/2etNk",
@@ -17,6 +18,20 @@ LINKS = {
 }
 
 
+def to_tile_key(name):
+    if name in LINKS:
+        return name
+
+    if not isinstance(name, str):
+        return None
+
+    match = re.fullmatch(r"\s*(?:tile\s*)?#?\s*([0-8])\s*", name, flags=re.IGNORECASE)
+    if match:
+        return f"Tile {match.group(1)}"
+
+    return None
+
+
 def get_tile_count():
     headers = {"User-Agent": "Mozilla/5.0"}
     api_key = os.environ["API_KEY"]
@@ -25,12 +40,16 @@ def get_tile_count():
 
     r = requests.get(url=url, headers=headers)
     json_data = r.json()
+    if not isinstance(json_data, list):
+        raise RuntimeError(f"Unexpected Linkly response: {json_data}")
 
-    tile_click_count_new = {}
-    tile_click_count_difference = {}
+    tile_click_count_new = {key: 0 for key in LINKS}
 
     for tile in json_data:
-        tile_click_count_new[tile["name"]] = tile["clicks_count"]
+        tile_key = to_tile_key(tile.get("name"))
+        if tile_key is None:
+            continue
+        tile_click_count_new[tile_key] = tile.get("clicks_count", 0)
 
     if not os.path.exists("tile_count.json"):
         tile_click_count_difference = tile_click_count_new.copy()
@@ -39,7 +58,7 @@ def get_tile_count():
             tile_click_counter_old = json.load(f)
             tile_click_count_difference = {
                 key: tile_click_count_new[key] - tile_click_counter_old.get(key, 0)
-                for key in tile_click_count_new
+                for key in LINKS
             }
 
     with open("tile_count.json", "w") as f:
@@ -74,8 +93,10 @@ def tictactoe(tile_click_count):
         game_state["last_played"] = random.choice([True, False])
 
     move = max(
-        tile_click_count,
-        key=lambda x: tile_click_count[x] if game_state["tiles"][x] is None else -1,
+        game_state["tiles"],
+        key=lambda x: tile_click_count.get(x, 0)
+        if game_state["tiles"][x] is None
+        else -1,
     )
 
     print(game_state)
