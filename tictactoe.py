@@ -4,17 +4,8 @@ import os
 import random
 import datetime
 
-LINKS = {
-    "Tile 0": "https://linkly.link/2FE1V",
-    "Tile 1": "https://linkly.link/2FE1X",
-    "Tile 2": "https://linkly.link/2FE1Y",
-    "Tile 3": "https://linkly.link/2FE1Z",
-    "Tile 4": "https://linkly.link/2FE1a",
-    "Tile 5": "https://linkly.link/2FE1b",
-    "Tile 6": "https://linkly.link/2FE1c",
-    "Tile 7": "https://linkly.link/2FE1d",
-    "Tile 8": "https://linkly.link/2FE1e",
-}
+TARGET_URL = "https://github.com/zhanghaichao520"
+LINKS = {f"Tile {i}": TARGET_URL for i in range(9)}
 
 GITHUB_USERNAME = os.getenv("GITHUB_USERNAME", "zhanghaichao520")
 PROFILE_REPO = os.getenv("PROFILE_REPO", GITHUB_USERNAME)
