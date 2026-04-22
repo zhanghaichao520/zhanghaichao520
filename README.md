@@ -12,13 +12,13 @@
 点击一个格子即可参与落子投票  
 每小时会自动选择点击次数最多的一步
 
-当前轮到: <img src="https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/False.png" alt="当前回合" width="32"/>
+获胜方: <img src="https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/False.png" alt="获胜方" width="32"/>
 
 | Tic | Tac | Toe |
 |--|--|--|
 | [![Tile 0](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/False.png)](https://github.com/zhanghaichao520) | [![Tile 1](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/True.png)](https://github.com/zhanghaichao520) | [![Tile 2](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/False.png)](https://github.com/zhanghaichao520) |
 | [![Tile 3](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/True.png)](https://github.com/zhanghaichao520) | [![Tile 4](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/False.png)](https://github.com/zhanghaichao520) | [![Tile 5](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/True.png)](https://github.com/zhanghaichao520) |
-| [![Tile 6](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/None.png)](https://linkly.link/2etPr) | [![Tile 7](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/None.png)](https://linkly.link/2etQB) | [![Tile 8](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/None.png)](https://linkly.link/2etQZ) |
+| [![Tile 6](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/False.png)](https://github.com/zhanghaichao520) | [![Tile 7](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/None.png)](https://linkly.link/2etQB) | [![Tile 8](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/None.png)](https://linkly.link/2etQZ) |
 
 ## 玩法说明
 
