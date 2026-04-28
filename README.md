@@ -2,7 +2,7 @@
 ### 欢迎来到我的 <img src="https://img.icons8.com/color/96/000000/github--v1.png" height="24"/>GitHub 主页
 
 <p align="center">
-  <a href="https://zhanghaichao520.github.io/"><img src="https://img.icons8.com/color/96/000000/github--v1.png" height="16"/>个人主页</a> ·
+  <a href="https://zhang-haichao.github.io/"><img src="https://img.icons8.com/color/96/000000/github--v1.png" height="16"/>个人主页</a> ·
   <a href="https://www.linkedin.com/in/%E6%B5%B7%E8%B6%85-%E5%BC%A0-8236312a5/"><img src="https://img.icons8.com/color/96/000000/linkedin-circled.png" height="16"/>LinkedIn</a> ·
   <a href="https://x.com/zhanghaichao961"><img src="https://img.icons8.com/color/96/000000/twitter-circled.png" height="16"/>Twitter</a> ·
   <a href="mailto:zhang_haichao@163.com"><img src="https://img.icons8.com/color/96/000000/email.png" height="16"/>邮箱</a>
@@ -12,13 +12,13 @@
 点击一个格子即可参与落子投票  
 每小时会自动选择点击次数最多的一步
 
-当前轮到: <img src="https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/False.png" alt="当前回合" width="32"/>
+当前轮到: <img src="https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/False.png" alt="当前回合" width="32"/>
 
 | Tic | Tac | Toe |
 |--|--|--|
-| [![Tile 0](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/False.png)](https://github.com/zhanghaichao520) | [![Tile 1](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/True.png)](https://github.com/zhanghaichao520) | [![Tile 2](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/True.png)](https://github.com/zhanghaichao520) |
-| [![Tile 3](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/False.png)](https://github.com/zhanghaichao520) | [![Tile 4](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/False.png)](https://github.com/zhanghaichao520) | [![Tile 5](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/True.png)](https://github.com/zhanghaichao520) |
-| [![Tile 6](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/None.png)](https://linkly.link/2etPr) | [![Tile 7](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/None.png)](https://linkly.link/2etQB) | [![Tile 8](https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets/None.png)](https://linkly.link/2etQZ) |
+| [![Tile 0](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/False.png)](https://github.com/zhang-haichao) | [![Tile 1](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/True.png)](https://github.com/zhang-haichao) | [![Tile 2](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/True.png)](https://github.com/zhang-haichao) |
+| [![Tile 3](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/False.png)](https://github.com/zhang-haichao) | [![Tile 4](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/False.png)](https://github.com/zhang-haichao) | [![Tile 5](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/True.png)](https://github.com/zhang-haichao) |
+| [![Tile 6](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/None.png)](https://linkly.link/2etPr) | [![Tile 7](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/None.png)](https://linkly.link/2etQB) | [![Tile 8](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/None.png)](https://linkly.link/2etQZ) |
 
 ## 玩法说明
 
