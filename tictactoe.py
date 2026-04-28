@@ -157,8 +157,8 @@ def tictactoe(tile_click_count):
 
 
 def update_readme(game_state, winner):
-    profile_url = "https://github.com/zhanghaichao520"
-    asset_base_url = "https://github.com/zhanghaichao520/zhanghaichao520/blob/master/assets"
+    profile_url = "https://github.com/zhang-haichao"
+    asset_base_url = "https://github.com/zhang-haichao/zhang-haichao/blob/master/assets"
 
     tile_content = {}
     for tile in range(9):
@@ -181,7 +181,7 @@ def update_readme(game_state, winner):
 ### 欢迎来到我的 <img src="https://img.icons8.com/color/96/000000/github--v1.png" height="24"/>GitHub 主页
 
 <p align="center">
-  <a href="https://zhanghaichao520.github.io/"><img src="https://img.icons8.com/color/96/000000/github--v1.png" height="16"/>个人主页</a> ·
+  <a href="https://zhang-haichao.github.io/"><img src="https://img.icons8.com/color/96/000000/github--v1.png" height="16"/>个人主页</a> ·
   <a href="https://www.linkedin.com/in/%E6%B5%B7%E8%B6%85-%E5%BC%A0-8236312a5/"><img src="https://img.icons8.com/color/96/000000/linkedin-circled.png" height="16"/>LinkedIn</a> ·
   <a href="https://x.com/zhanghaichao961"><img src="https://img.icons8.com/color/96/000000/twitter-circled.png" height="16"/>Twitter</a> ·
   <a href="mailto:zhang_haichao@163.com"><img src="https://img.icons8.com/color/96/000000/email.png" height="16"/>邮箱</a>
