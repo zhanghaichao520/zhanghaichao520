@@ -12,12 +12,12 @@
 点击一个格子即可参与落子投票  
 每小时会自动选择点击次数最多的一步
 
-当前轮到: <img src="https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/False.png" alt="当前回合" width="32"/>
+当前轮到: <img src="https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/True.png" alt="当前回合" width="32"/>
 
 | Tic | Tac | Toe |
 |--|--|--|
 | [![Tile 0](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/True.png)](https://github.com/zhang-haichao) | [![Tile 1](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/False.png)](https://github.com/zhang-haichao) | [![Tile 2](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/True.png)](https://github.com/zhang-haichao) |
-| [![Tile 3](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/False.png)](https://github.com/zhang-haichao) | [![Tile 4](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/True.png)](https://github.com/zhang-haichao) | [![Tile 5](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/None.png)](https://linkly.link/2etPZ) |
+| [![Tile 3](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/False.png)](https://github.com/zhang-haichao) | [![Tile 4](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/True.png)](https://github.com/zhang-haichao) | [![Tile 5](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/False.png)](https://github.com/zhang-haichao) |
 | [![Tile 6](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/None.png)](https://linkly.link/2etPr) | [![Tile 7](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/None.png)](https://linkly.link/2etQB) | [![Tile 8](https://github.com/zhang-haichao/zhang-haichao/blob/master/assets/None.png)](https://linkly.link/2etQZ) |
 
 ## 玩法说明
